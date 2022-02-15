@@ -1,0 +1,135 @@
+.container {
+  .container-section1 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 5% 95%;
+    gap: 2rem;
+    .section1-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      a {
+        display: flex;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $font-color;
+      }
+      .text-bold {
+        font-weight: 600;
+      }
+      .section1-nav-arrow {
+        display: flex;
+        height: 17px;
+        padding-top: 0.2rem;
+        img {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .images-container {
+      display: grid;
+      grid-template-rows: 80% 20%;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      gap: 1rem;
+      img {
+        background-color: $very-light-grey;
+        object-fit: cover;
+      }
+      .images-container-main {
+        background-color: $very-light-grey;
+      }
+      .images-container-secondary {
+        display: grid;
+        grid-template-columns: 10% 10% auto;
+        gap: 0.8rem;
+        img {
+          width: 60px;
+        }
+      }
+    }
+    .description-container {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      h1 {
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .note {
+        margin: 0.5rem 0 1rem 0;
+        .star {
+          color: #f79823;
+        }
+        .avis-number {
+          text-decoration: none;
+          color: $dark-black;
+        }
+      }
+      a {
+        color: $dark-green;
+        text-transform: uppercase;
+      }
+      .p-bold {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 1rem 0 0 0;
+      }
+      .select {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #1010101a;
+        padding: 0.5rem 0 0.5rem 0;
+        p {
+          margin: 0;
+        }
+        .fa-angle-down {
+          display: flex;
+        }
+      }
+      .quantity {
+        border: 1px solid #1010101a;
+        margin: 2rem 0 0 0;
+        width: 103px;
+        p {
+          margin: 0;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+      .select:hover {
+        border-bottom: 1px solid #149f83;
+      }
+
+      .price {
+        p {
+          font-size: 26px;
+          font-weight: 600;
+        }
+        .btn-addtocart {
+          background-color: $dark-yellow;
+          border: none;
+          width: 100%;
+          height: 62px;
+          font-size: 18px;
+          color: white;
+        }
+        .kilo-price {
+          font-size: 16px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+  .select-delay {
+    padding: 1rem 0 1rem 1rem;
+    .delay {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #1010101a;
+      padding: 0.5rem 0 0.5rem 0;
+    }
+  }
+}

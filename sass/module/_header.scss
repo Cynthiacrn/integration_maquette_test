@@ -3,7 +3,7 @@
   grid-template-columns: 10% 70% 10%;
   justify-content: space-between;
   border-bottom: 1px solid #1010101a;
-  padding: 0 359px 16px 359px;
+  padding: 16px 402px 16px 402px;
   .header-menu-logo {
     display: flex;
     img {
@@ -30,6 +30,9 @@
       img {
         align-items: center;
       }
+    }
+    .price {
+      font-size: 16px;
     }
   }
 }
