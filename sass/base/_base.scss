@@ -1,0 +1,15 @@
+body {
+  color: $font-color;
+  font-family: "Poppins", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  h1 {
+    font-size: 34px;
+    color: $dark-black;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 20px;
+    color: $font-color;
+    font-weight: 600;
+  }
+}
