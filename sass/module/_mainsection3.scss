@@ -1,0 +1,124 @@
+.container-section3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5% 85%;
+  .taste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    a {
+      border-radius: 17px;
+      cursor: pointer;
+      padding: 0 1rem;
+      text-decoration: none;
+      color: black;
+    }
+    a:focus {
+      background-color: $dark-green;
+      color: white;
+    }
+  }
+  .text-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80% 20%;
+    gap: 2rem;
+    .ingredients {
+      padding: 0 3rem;
+      h2 {
+        position: relative;
+        margin: 0;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 3px;
+          background-color: $dark-green;
+          bottom: -15px;
+          margin-top: 0.5rem;
+        }
+      }
+      p {
+        margin-top: 2rem;
+      }
+      .com1 {
+        margin-bottom: 0;
+      }
+      .com2 {
+        margin-top: 0;
+      }
+    }
+    .composition {
+      padding: 0 3rem;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        position: relative;
+        margin: 0;
+        margin-bottom: 3rem;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 3px;
+          background-color: $dark-green;
+          bottom: -15px;
+          margin-top: 0.5rem;
+        }
+      }
+      .table-title {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+      }
+      p {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #1010101a;
+        margin: 0;
+        padding: 0.9rem 0;
+      }
+    }
+    .avertissements {
+      padding: 0 3rem;
+      h2 {
+        position: relative;
+        margin: 0;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 3px;
+          background-color: $dark-green;
+          bottom: -15px;
+          margin-top: 0.5rem;
+        }
+      }
+      p {
+        margin-top: 2rem;
+      }
+    }
+    .conseils {
+      padding: 0 4rem 0 3rem;
+      h2 {
+        position: relative;
+        margin: 0;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 3px;
+          background-color: $dark-green;
+          bottom: -15px;
+          margin-top: 0.5rem;
+        }
+      }
+      p {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
