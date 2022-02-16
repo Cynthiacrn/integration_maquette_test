@@ -4,6 +4,12 @@
   background-color: $light-grey;
   margin: 2rem 0;
   .description-container2 {
+    .images-container2 {
+      img {
+        object-fit: cover;
+        max-width: 100%;
+      }
+    }
     h2 {
       position: relative;
       &::before {
@@ -16,7 +22,7 @@
         margin-top: 0.5rem;
       }
     }
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,4 +1,16 @@
+@media only screen and (max-width: 1550px) {
+  .header {
+    .nav-bar {
+      display: flex;
+    }
+  }
+}
+
 @media only screen and (max-width: 1100px) {
+  .body {
+    padding: 0;
+    margin: 0;
+  }
   .header {
     display: flex;
     flex-direction: column;
@@ -50,6 +62,7 @@
         grid-row: 1/2;
         font-size: 20px;
         align-items: center;
+        padding: 0 0 0 1rem;
         cursor: pointer;
         z-index: 2;
         background-color: white;
@@ -68,8 +81,9 @@
       }
       .header-icones {
         display: flex;
-        gap: 0;
-        justify-content: space-evenly;
+        gap: 0.5rem;
+        justify-content: flex-end;
+        padding: 0 1rem 0 0;
         .fa-cart-shopping {
           display: flex;
         }
@@ -80,6 +94,39 @@
     }
     .fa-bag-shopping {
       display: none;
+    }
+  }
+  .container {
+    padding: 0.5rem;
+    width: auto;
+    .container-section1 {
+      display: flex;
+      flex-direction: column;
+      .section1-nav {
+        gap: 0.5rem;
+        a {
+          font-size: 13px;
+          align-items: center;
+        }
+      }
+      .images-container {
+        .images-container-main {
+          display: flex;
+        }
+        .images-container-secondary {
+          display: grid;
+          grid-template-columns: 20% 20% auto;
+        }
+      }
+    }
+    .container-section2 {
+      display: flex;
+      flex-direction: column;
+      .images-container2 {
+        img {
+          max-width: 100%;
+        }
+      }
     }
   }
 }

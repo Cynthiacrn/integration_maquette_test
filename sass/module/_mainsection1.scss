@@ -8,6 +8,7 @@
     // nav section1
     .section1-nav {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       gap: 1.5rem;
       margin-top: 1rem;
@@ -23,7 +24,7 @@
       }
       .section1-nav-arrow {
         display: flex;
-        height: 17px;
+        height: 15px;
         padding-top: 0.2rem;
         img {
           display: flex;
@@ -42,6 +43,8 @@
       img {
         background-color: $very-light-grey;
         object-fit: cover;
+        max-height: 100%;
+        max-width: 100%;
       }
       .images-container-main {
         background-color: $very-light-grey;
@@ -51,7 +54,9 @@
         grid-template-columns: 10% 10% auto;
         gap: 0.8rem;
         img {
-          width: 60px;
+          object-fit: cover;
+          max-width: 100%;
+          // width: 60px;
         }
       }
     }
