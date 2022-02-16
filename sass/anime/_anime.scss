@@ -5,6 +5,9 @@
   flex-direction: column;
   position: relative;
   margin-bottom: 1rem;
+  a {
+    text-decoration: none;
+  }
   .check-unique {
     display: flex;
     position: relative;
@@ -12,6 +15,7 @@
     font-weight: 600;
     .check {
       position: absolute;
+      color: $font-color;
       cursor: pointer;
       z-index: 2;
       i {
@@ -32,6 +36,7 @@
     .check {
       position: absolute;
       cursor: pointer;
+      color: $font-color;
       z-index: 2;
       font-weight: 600;
       i {
@@ -47,10 +52,10 @@
   }
 }
 
-.check:hover {
+.check:focus {
   opacity: 0;
 }
 
-.checked:hover {
+.checked:focus {
   opacity: 1;
 }

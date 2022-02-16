@@ -3,7 +3,7 @@ body {
   font-family: "Poppins", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 16px;
   h1 {
-    font-size: 34px;
+    font-size: 30px;
     color: $dark-black;
     font-weight: 600;
   }
@@ -11,5 +11,6 @@ body {
     font-size: 20px;
     color: $font-color;
     font-weight: 600;
+    text-transform: uppercase;
   }
 }

@@ -16,24 +16,34 @@
 
 <body>
     <header class="header">
-        <a href="#" class="header-menu-logo">
-            <img src="img/Logo_BeNN_Noir_Vert_d-1.png" alt="Logo BeNN">
-        </a>
-        <nav class="header-menu">
-            <a href="#"> Pré wod</a>
-            <a href="#"> intra wod</a>
-            <a href="#"> post wod</a>
-            <a href="#"> vitamines et minéraux </a>
-            <a href="#"> Packs</a>
-        </nav>
-        <nav class="header-icones">
-            <a href="#"> <img src="img/icones/user.svg" alt="icone utilisateur"> </a>
-            <a href="#"> <img src="img/icones/search.svg" alt="icone loupe"></a>
-            <a href="#"> <img src="img/icones/shop.svg" alt="icone panier"></a>
-        </nav>
+        <div class="reduction">
+            <p>JUSQU'A -30% DE RÉDUCTION</p>
+        </div>
+        <div class="nav-bar">
+            <label for="toggle" class="label-hamburger"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle">
+            <a href="#" class="header-menu-logo">
+                <img src="img/Logo_BeNN_Noir_Vert_d-1.png" alt="Logo BeNN">
+            </a>
+            <nav class="header-menu">
+                <a href="#"> Pré wod</a>
+                <a href="#"> intra wod</a>
+                <a href="#"> post wod</a>
+                <a href="#"> vitamines et minéraux </a>
+                <a href="#"> Packs</a>
+            </nav>
+            <nav class="header-icones">
+                <a href="#"><i class="fa-regular fa-user"></i> </a>
+                <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </div>
     </header>
+
     <main class="container">
         <section class="container-section1">
+            <!--section1 navigation-->
             <div class="section1-nav">
                 <a href="#">Accueil</a>
                 <div class="section1-nav-arrow"><img src="img/icones/angle-right-solid.svg" alt="icone fleche"></div>
@@ -41,6 +51,8 @@
                 <div class="section1-nav-arrow"><img src="img/icones/angle-right-solid.svg" alt="icone fleche"></div>
                 <a class="text-bold" href="#">Nom du produit</a>
             </div>
+
+            <!--images container-->
             <div class="images-container">
                 <div class="images-container-main"><img src="img/BE_GORILLA_FACE_png.png" alt="Cannette BE GORILLA">
                 </div>
@@ -50,6 +62,7 @@
                 </div>
             </div>
 
+            <!--description container-->
             <aside class="description-container">
                 <h1>be gorilla - protéine végan</h1>
                 <div class="note">
@@ -69,20 +82,25 @@
                     <p>Chocolat</p><i class="fa-solid fa-angle-down"></i>
                 </div>
                 <div class="quantity">
-                    <p><span> - </span> 1 <span> + </span></p>
+                    <button class="moins"> - </button>
+                    <label for="quantity"></label>
+                    <input type="number" id="quantity" value="1" name="quantity" min="1" max="50">
+                    <button class="plus"> + </button>
+                    <!-- <p><span class="moins"> - </span> 1 <span class="plus"> + </span></p> -->
                 </div>
                 <div class="select-price">
                     <div class="check-unique">
-                        <p class="check"><i class="fa-regular fa-circle"></i><span> 14,90€ - achat unique</span>
-                        </p>
-                        <p class="checked"><i class="fa-regular fa-circle-dot"></i><span> 14,90€ - achat
-                                unique</span></p>
+                        <a href="#" class="check"><i class="fa-regular fa-circle"></i><span> 14,90€ - achat
+                                unique</span>
+                        </a>
+                        <a href="#" class="checked"><i class="fa-regular fa-circle-dot"></i><span> 14,90€ - achat
+                                unique</span></a>
                     </div>
                     <div class="check-abo">
-                        <p class="check"><i class="fa-regular fa-circle"></i><span> 12,67€ - abonnement</span>
-                        </p>
-                        <p class="checked"><i class="fa-regular fa-circle-dot"></i><span> 12,67€ -
-                                abonnement</span></p>
+                        <a href="#" class="check"><i class="fa-regular fa-circle"></i><span> 12,67€ - abonnement</span>
+                        </a>
+                        <a href="#" class="checked"><i class="fa-regular fa-circle-dot"></i><span> 12,67€ -
+                                abonnement</span></a>
                     </div>
                 </div>
 
@@ -96,10 +114,18 @@
                     <button class="btn-addtocart">Ajouter au panier</button>
                     <p class="kilo-price">3,31€ / 100g</p>
                 </div>
-
-
             </aside>
+        </section>
 
+        <section class="container-section2">
+            <div class="images-container2">
+                <img src="img/BeNN_Whey_mockup_Choco.png" alt="Paquet BE GORILLA protéines chocolat">
+            </div>
+            <div class="description-container2">
+                <h2>le mur des héros.</h2>
+                <p>Use this text to share information about your brand with your customers. Describe a product, share
+                    announcements, or welcome customers to your store.</p>
+            </div>
         </section>
 
     </main>
