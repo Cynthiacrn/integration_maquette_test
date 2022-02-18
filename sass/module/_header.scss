@@ -17,11 +17,11 @@
   // Barre de navigation
   .nav-bar {
     display: grid;
-    grid-template-columns: 10% 75% 10%;
-    justify-content: space-between;
+    grid-template-columns: 10% 40% 4%;
+    justify-content: center;
     gap: 1rem;
     border-bottom: 1px solid #1010101a;
-    padding: 16px 410px 16px 410px;
+    padding: 16px 0;
 
     // Menu hamburger qui apparaîtra en responsive
     label,
@@ -60,10 +60,12 @@
       display: flex;
       gap: 1.5rem;
       align-items: center;
+      cursor: pointer;
       a {
         color: $font-color;
         text-decoration: none;
         font-size: 18px;
+
         &:hover {
           color: $dark-green;
         }

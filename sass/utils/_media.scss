@@ -1,100 +1,118 @@
 @media only screen and (max-width: 1550px) {
   // Responsive header
-  .header {
-    display: flex;
-    flex-direction: column;
-    .reduction {
-      display: block;
-      display: flex;
-    }
-    .nav-bar {
-      height: 60px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 80% 20%;
-      justify-content: center;
-      padding: 1rem 0 0 0;
-      .header-menu-logo {
-        display: flex;
-        justify-content: center;
-      }
-      .header-menu {
-        display: none;
-        // display: flex;
-        flex-direction: column;
-        grid-column: 1/4;
-        grid-row: 2/3;
-        z-index: 2;
-        height: 193px;
-        background-color: white;
-        gap: 0.5rem;
-        padding: 1.5rem 1.5rem 0 1.5rem;
-        border: 0 1px 1px 1px solid #1010101a;
-        a {
-          border-bottom: 1px solid #1010101a;
-          border-radius: 0;
-          background-color: white;
-          &:hover {
-            color: $dark-green;
-            background-color: white;
-          }
-          &:focus {
-            color: $font-color;
-            background-color: white;
-          }
-        }
-      }
-      .header-menu a {
-        width: 100%;
-      }
-      .label-hamburger {
-        display: flex;
-        grid-row: 1/2;
-        font-size: 20px;
-        align-items: center;
-        padding: 0 0 0 1rem;
-        cursor: pointer;
-        z-index: 2;
-        background-color: white;
-      }
-      #toggle {
-        display: flex;
-        position: absolute;
-        width: 1rem;
-        height: 2.5rem;
-        cursor: pointer;
-        z-index: 1;
-      }
 
-      #toggle:checked ~ .header-menu {
-        display: flex;
-      }
-      .header-icones {
-        display: flex;
-        gap: 0.5rem;
-        justify-content: flex-end;
-        padding: 0 1rem 0 0;
-        .fa-cart-shopping {
-          display: flex;
-        }
-      }
+  .header {
+    .nav-bar {
+      padding: 16px 16px;
+      display: grid;
+      grid-template-columns: 10% 75% 10%;
+      justify-content: space-between;
     }
-    .fa-regular {
-      display: none;
+  }
+  .footer {
+    .sub-container {
+      padding: 16px 16px;
     }
-    .fa-bag-shopping {
-      display: none;
-    }
-    .prewod-container {
-      display: none;
+    .about-container {
+      padding: 16px 16px;
     }
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1024px) {
   body {
     padding: 0;
     margin: 0;
+    // Responsive header
+    .header {
+      display: flex;
+      flex-direction: column;
+      .reduction {
+        display: block;
+        display: flex;
+      }
+      .nav-bar {
+        height: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80% 20%;
+        justify-content: center;
+        padding: 1rem 0 0 0;
+        .header-menu-logo {
+          display: flex;
+          justify-content: center;
+        }
+        .header-menu {
+          display: none;
+          // display: flex;
+          flex-direction: column;
+          grid-column: 1/4;
+          grid-row: 2/3;
+          z-index: 2;
+          height: 193px;
+          background-color: white;
+          gap: 0.5rem;
+          padding: 1.5rem 1.5rem 0 1.5rem;
+          border: 0 1px 1px 1px solid #1010101a;
+          a {
+            border-bottom: 1px solid #1010101a;
+            border-radius: 0;
+            background-color: white;
+            &:hover {
+              color: $dark-green;
+              background-color: white;
+            }
+            &:focus {
+              color: $font-color;
+              background-color: white;
+            }
+          }
+        }
+        .header-menu a {
+          width: 100%;
+        }
+        .label-hamburger {
+          display: flex;
+          grid-row: 1/2;
+          font-size: 20px;
+          align-items: center;
+          padding: 0 0 0 1rem;
+          cursor: pointer;
+          z-index: 2;
+          background-color: white;
+        }
+        #toggle {
+          display: flex;
+          position: absolute;
+          width: 1rem;
+          height: 2.5rem;
+          cursor: pointer;
+          z-index: 1;
+        }
+
+        #toggle:checked ~ .header-menu {
+          display: flex;
+        }
+        .header-icones {
+          display: flex;
+          gap: 0.5rem;
+          justify-content: flex-end;
+          padding: 0 1rem 0 0;
+          .fa-cart-shopping {
+            display: flex;
+          }
+        }
+      }
+      .fa-regular {
+        display: none;
+      }
+      .fa-bag-shopping {
+        display: none;
+      }
+      .prewod-container {
+        display: none; // Je le supprime du responsive car trop imposant à voir pour rédiriger vers les pages produits
+      }
+    }
   }
 
   .container {
@@ -168,10 +186,6 @@
       }
     }
   }
-}
-
-// Responsive footer
-@media only screen and (max-width: 1735px) {
   .footer {
     display: flex;
     flex-direction: column;

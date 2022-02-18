@@ -4,6 +4,7 @@
   // Bloc de la première section
   .container-section1 {
     display: grid;
+    padding: 16px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 5% 95%;
     gap: 2rem;
@@ -82,10 +83,15 @@
           color: $dark-black;
         }
       }
+
       .ingredients {
         color: $dark-green;
         text-transform: uppercase;
+        &:hover {
+          color: $light-green;
+        }
       }
+
       .p-bold {
         font-weight: 600;
         text-transform: uppercase;
@@ -124,13 +130,13 @@
             justify-content: space-around;
           }
         }
-        .moins,
-        .plus {
+        #inc,
+        #dec {
           background-color: white;
           border: none;
         }
-        .moins:hover,
-        .plus:hover {
+        #inc:hover,
+        #dec:hover {
           color: $dark-green;
           cursor: pointer;
         }
