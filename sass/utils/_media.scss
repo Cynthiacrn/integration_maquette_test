@@ -1,16 +1,5 @@
 @media only screen and (max-width: 1550px) {
-  .header {
-    .nav-bar {
-      display: flex;
-    }
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  body {
-    padding: 0;
-    margin: 0;
-  }
+  // Responsive header
   .header {
     display: flex;
     flex-direction: column;
@@ -27,6 +16,7 @@
       padding: 1rem 0 0 0;
       .header-menu-logo {
         display: flex;
+        justify-content: center;
       }
       .header-menu {
         display: none;
@@ -49,7 +39,7 @@
             background-color: white;
           }
           &:focus {
-            color: black;
+            color: $font-color;
             background-color: white;
           }
         }
@@ -95,10 +85,23 @@
     .fa-bag-shopping {
       display: none;
     }
+    .prewod-container {
+      display: none;
+    }
   }
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
   .container {
     padding: 0;
     width: auto;
+
+    // Responsive Bloc section 1
     .container-section1 {
       box-shadow: inset 0px 5px 9px -8px #0000003d;
       padding: 1rem;
@@ -121,6 +124,8 @@
         }
       }
     }
+
+    // Responsive Bloc section 2
     .container-section2 {
       display: flex;
       flex-direction: column;
@@ -130,6 +135,8 @@
         }
       }
     }
+
+    // Bloc section 3
     .container-section3 {
       display: flex;
       flex-direction: column;
@@ -161,6 +168,10 @@
       }
     }
   }
+}
+
+// Responsive footer
+@media only screen and (max-width: 1735px) {
   .footer {
     display: flex;
     flex-direction: column;

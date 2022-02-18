@@ -1,0 +1,63 @@
+// Animation produits pré wod
+@keyframes grow {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// Animation liens footer
+@keyframes slide-bottom {
+  0% {
+    transform: translateX(0);
+    transform: scale(0.99);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    transform: translateX(-100px);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.links.visible > li {
+  animation: slide-bottom 0.3s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+}
+.links.visible > li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.links.visible > li:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.links.visible > li:nth-child(4) {
+  animation-delay: 0.7s;
+}
+.links.visible > li:nth-child(5) {
+  animation-delay: 0.9s;
+}
+
+@media only screen and (max-width: 1550px) {
+  #toggle:checked ~ .header-menu > a {
+    animation: slide-bottom 0.3s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+  }
+  #toggle:checked ~ .header-menu > a:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  #toggle:checked ~ .header-menu > a:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  #toggle:checked ~ .header-menu > a:nth-child(4) {
+    animation-delay: 0.7s;
+  }
+  #toggle:checked ~ .header-menu > a:nth-child(5) {
+    animation-delay: 0.9s;
+  }
+}

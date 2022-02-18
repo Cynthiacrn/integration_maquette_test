@@ -1,4 +1,5 @@
 .container {
+  // Bloc de la première section
   .container-section1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -95,9 +96,6 @@
         padding: 0.5rem 0 0.5rem 0;
         p {
           margin: 0;
-        }
-        .fa-angle-down {
-          display: flex;
         }
       }
       .quantity {
