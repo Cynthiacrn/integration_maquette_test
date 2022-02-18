@@ -8,7 +8,7 @@
   }
 }
 
-// Animation liens footer
+// Animation liens déroulants footer
 @keyframes slide-bottom {
   0% {
     transform: translateX(0);
@@ -28,6 +28,7 @@
   }
 }
 
+// Application de l'animation liens déroulants footer responsive
 .links.visible > li {
   animation: slide-bottom 0.3s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
 }
@@ -44,6 +45,7 @@
   animation-delay: 0.9s;
 }
 
+// Animation du menu déroulant header en responsive
 @media only screen and (max-width: 1550px) {
   #toggle:checked ~ .header-menu > a {
     animation: slide-bottom 0.3s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
