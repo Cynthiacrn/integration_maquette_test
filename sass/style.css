@@ -114,7 +114,6 @@ body h1 {
 }
 body h2 {
   font-size: 20px;
-  color: #202f34;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -898,6 +897,9 @@ body h2 {
     margin: 0.5rem;
     padding: 0 0 0.5rem 0;
   }
+  .footer .about-container .about-links .about-title {
+    transition: 0.5s ease-in-out;
+  }
   .footer .about-container .about-links .about-title i {
     font-size: 20px;
     align-items: center;
@@ -914,6 +916,9 @@ body h2 {
   }
   .footer .about-container .about-links .rotate {
     transform: rotate(90deg);
+  }
+  .footer .about-container .about-links .color-title {
+    color: #149f83;
   }
   .footer .about-container .about-links h2 {
     margin: 0 0;

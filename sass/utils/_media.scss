@@ -204,6 +204,7 @@
       .about-links {
         cursor: pointer;
         .about-title {
+          transition: 0.5s ease-in-out;
           i {
             font-size: 20px;
             align-items: center;
@@ -219,9 +220,11 @@
         .visible {
           display: block;
         }
-
         .rotate {
           transform: rotate(90deg);
+        }
+        .color-title {
+          color: $dark-green;
         }
 
         border-bottom: 1px solid $dark-grey;
